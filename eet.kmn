@@ -1,0 +1,134 @@
+﻿store(&VERSION) '10.0'
+store(&NAME) 'EET Keyboard'
+store(&TARGETS) 'windows'
+store(&LAYOUTFILE) 'eet.kvks'
+
+begin > use(main)
+
+group(main) using keys
+
+c -------------------------
+c Number row (unshifted)
+c -------------------------
++ [K_BKQUOTE] > '`'
++ [K_1] > '1'
++ [K_2] > '2'
++ [K_3] > '3'
++ [K_4] > '4'
++ [K_5] > '5'
++ [K_6] > '6'
++ [K_7] > '7'
++ [K_8] > '8'
++ [K_9] > '9'
++ [K_0] > '0'
++ [K_HYPHEN] > '-'
++ [K_EQUAL] > '='
+
+c -------------------------
+c Number row (shifted)
+c -------------------------
++ [SHIFT K_BKQUOTE] > '~'
++ [SHIFT K_1] > '@'
++ [SHIFT K_2] > '#'
++ [SHIFT K_3] > '$'
++ [SHIFT K_4] > '%'
++ [SHIFT K_5] > '^'
++ [SHIFT K_6] > '&'
++ [SHIFT K_7] > '*'
++ [SHIFT K_8] > '('
++ [SHIFT K_9] > ')'
++ [SHIFT K_0] > '!'
++ [SHIFT K_HYPHEN] > '_'
++ [SHIFT K_EQUAL] > '+'
+
+c -------------------------
+c Top row (QWERTY → EET)
+c -------------------------
++ [K_Q] > 'q'
++ [K_W] > 'l'
++ [K_E] > 'w'
++ [K_R] > 'm'
++ [K_T] > 'g'
++ [K_Y] > 'j'
++ [K_U] > 'f'
++ [K_I] > 'u'
++ [K_O] > 'y'
++ [K_P] > 'p'
++ [K_LBRKT] > '['
++ [K_RBRKT] > ']'
++ [K_BKSLASH] > '\'
+
+c -------------------------
+c Top row (shifted)
+c -------------------------
++ [SHIFT K_Q] > 'Q'
++ [SHIFT K_W] > 'L'
++ [SHIFT K_E] > 'W'
++ [SHIFT K_R] > 'M'
++ [SHIFT K_T] > 'G'
++ [SHIFT K_Y] > 'J'
++ [SHIFT K_U] > 'F'
++ [SHIFT K_I] > 'U'
++ [SHIFT K_O] > 'Y'
++ [SHIFT K_P] > 'P'
++ [SHIFT K_LBRKT] > '{'
++ [SHIFT K_RBRKT] > '}'
++ [SHIFT K_BKSLASH] > '|'
+
+c -------------------------
+c Home row (QWERTY → EET)
+c -------------------------
++ [K_A] > 's'
++ [K_S] > 't'
++ [K_D] > 'r'
++ [K_F] > 'n'
++ [K_G] > 'h'
++ [K_H] > 'a'
++ [K_J] > 'e'
++ [K_K] > 'i'
++ [K_L] > 'o'
++ [K_SEMICOLON] > ';'
++ [K_QUOTE] > "'"
+
+c -------------------------
+c Home row (shifted)
+c -------------------------
++ [SHIFT K_A] > 'S'
++ [SHIFT K_S] > 'T'
++ [SHIFT K_D] > 'R'
++ [SHIFT K_F] > 'N'
++ [SHIFT K_G] > 'H'
++ [SHIFT K_H] > 'A'
++ [SHIFT K_J] > 'E'
++ [SHIFT K_K] > 'I'
++ [SHIFT K_L] > 'O'
++ [SHIFT K_SEMICOLON] > ':'
++ [SHIFT K_QUOTE] > '"'
+
+c -------------------------
+c Bottom row (QWERTY → EET)
+c -------------------------
++ [K_Z] > 'c'
++ [K_X] > 'k'
++ [K_C] > 'v'
++ [K_V] > 'x'
++ [K_B] > 'b'
++ [K_N] > 'd'
++ [K_M] > 'z'
++ [K_COMMA] > ','
++ [K_PERIOD] > '.'
++ [K_SLASH] > '/'
+
+c -------------------------
+c Bottom row (shifted)
+c -------------------------
++ [SHIFT K_Z] > 'C'
++ [SHIFT K_X] > 'K'
++ [SHIFT K_C] > 'V'
++ [SHIFT K_V] > 'X'
++ [SHIFT K_B] > 'B'
++ [SHIFT K_N] > 'D'
++ [SHIFT K_M] > 'Z'
++ [SHIFT K_COMMA] > '<'
++ [SHIFT K_PERIOD] > '>'
++ [SHIFT K_SLASH] > '?'
